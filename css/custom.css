@@ -1,0 +1,158 @@
+.block{
+    background: none repeat scroll 0 0 #ffffff;
+    margin: 0 auto;
+    padding: 70px 30px 0;
+    width: 1120px;
+}
+.main-title {
+    text-align: center;
+}
+.bottom-space {
+    margin-bottom: 70px;
+}
+.main-title h1 {
+    color: #919191;
+    font-size: 300%;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+.main-title p {
+    font-size: 140%;
+    font-style: italic;
+    font-weight: 100;
+    margin: 0;
+}
+.main-header {
+    background-image: url("../images/picture.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+.orange{
+    color : #f04e23 !important;
+}
+.std{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.45;
+}
+.table{
+    width: 1120px;
+    border: none;
+}
+.table tr{
+    border: none;
+}
+.table tr td:first-child{
+    color: #f04e23;
+    text-align: left;
+}
+.table tr td{
+    text-align: right;
+}
+.jobs-grid h1{
+    color: #919191;
+    margin: 0;
+    padding: 0;
+}
+.btn-area{
+    float: right;
+    margin-left: 50px;
+    margin-top: 1.45em;
+}
+.txt-area{
+    float: left;
+    margin-left: 50px;
+    margin-top: 1.45em;
+}
+.btn-area a {
+    background: none repeat scroll 0 0 #f04e23;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 22px 51px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.clear{
+    clear: both;
+}
+.title{
+    color: #000 !important;    
+}
+h3.orange{
+    margin: 0;
+    padding: 0;
+    color: #f04e23;
+}
+.work{
+    font-size: 100%;    
+    font-weight: 100;
+    line-height: 180%;
+    margin: 0;
+    padding: 0;   
+    color: #000;
+}
+div.file_upload {
+	width: 200px;
+	height: 24px;
+	background: #cccccc;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;		
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	padding: 10px 20px;
+}
+div.file_upload input {
+	position: absolute;
+	height: 30px;
+	width: 250px;
+	display: inline;
+	cursor: pointer;
+	opacity: 0;
+}
+
+div.file_upload:before {
+	content: 'UPLOAD COVER LETTER';
+	position: absolute;
+	left: 0; right: 0;
+	text-align: center;	
+	cursor: pointer;
+}
+.upload-label{
+    vertical-align: 20px;
+    margin-right: 20px;
+    color: #787878;
+}
+.padding-space{
+    padding-bottom: 20px;
+}
+.input-box{
+    display: inline-block;
+}
+.form-col{
+    float:left;
+    width: 48%;
+    margin-top: 40px;
+}
+.submit-orange{
+    background: none repeat scroll 0 0 #f04e23;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.input-big{
+    border: 1px solid #f04e23 !important;
+    display: block !important;
+    height: 26px !important;
+    line-height: 26px !important;
+    padding: 18px 10px !important;
+    width: 97% !important;
+}
