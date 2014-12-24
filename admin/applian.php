@@ -10,7 +10,7 @@ $jobModel = new job();
 $jobsSet = $jobModel->fetchAll();
 if(isset($_POST['submit'])){     
     $job_id = $_POST['job'];
-    if(!empty($job_id)){
+    if(!empty($job_id) || $job_id == 0){
         $applianModel = new candidite();
         $applianSet   = $applianModel->fetchByJobId($job_id);
     }       
@@ -36,6 +36,7 @@ if(isset($_POST['submit'])){
                                     <label class="control-label">Job Name</label>                                          
                                     <select name="job" class="form-control m-bot15" required>
                                         <option>Select Job..</option>
+                                        <option value="0">Not Listed Vacancies Appliances</option>
                                         <?php
                                         if(isset($jobsSet) && !empty($jobsSet)){
                                             foreach ($jobsSet as $job){

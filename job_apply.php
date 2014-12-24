@@ -43,11 +43,6 @@ if(isset($_POST['submit'])){
             $errors['upload'] = "Error Happends please try again";
         }
     }
-//echo '<pre>';
-//print_r($_FILES);
-//print_r($_POST);
-//die;
-    
 }
 ?>
 <!-- webSite Content Start-->
@@ -136,7 +131,7 @@ if(isset($_POST['submit'])){
 </div>
 <div class="block">
     <div class="main-title bottom-space v-align">
-        <p>If you don't see the position you're looking for, <a href='' class="orange">click here.</a></p>
+        <p style="padding-bottom: 70px;">If you don't see the position you're looking for, <a href='' class="orange">click here.</a></p>
     </div>
 </div>
 <!-- webSite Content End-->

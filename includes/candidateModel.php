@@ -17,6 +17,7 @@ class candidite
     public $coverUrl;
     public $created;
     public $active;
+    public $jobTitle = "";
     public $location = './uploads/';
 
 
@@ -29,8 +30,8 @@ class candidite
     public function create(){
         $database = new database();
         $this->created = date("Y-m-d");
-        $result = $database->query("INSERT INTO candidates (job_id,firstname,familyname,email,phone,cv_url,cover_url,created)
-                                    VALUES(:job_id, :firstname, :familyname, :email, :phone, :cv_url, :cover_url, :created)");
+        $result = $database->query("INSERT INTO candidates (job_id,firstname,familyname,email,phone,cv_url,cover_url, job_title,created)
+                                    VALUES(:job_id, :firstname, :familyname, :email, :phone, :cv_url, :cover_url, :job_title, :created)");
         $database->bind(':job_id', $this->jobId, PDO::PARAM_INT);
         $database->bind(':firstname', $this->firstName, PDO::PARAM_STR);
         $database->bind(':familyname', $this->familyName, PDO::PARAM_STR);
@@ -38,6 +39,7 @@ class candidite
         $database->bind(':phone', $this->phone, PDO::PARAM_STR);
         $database->bind(':cv_url', $this->cvUrl, PDO::PARAM_STR);
         $database->bind(':cover_url', $this->coverUrl, PDO::PARAM_STR);
+        $database->bind(':job_title', $this->jobTitle, PDO::PARAM_STR);
         $database->bind(':created'  , $this->created);        
         $database->execute();
         return $database->lastInsertId()? TRUE : FALSE;
