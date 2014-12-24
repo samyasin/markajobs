@@ -15,9 +15,9 @@
                 </a>
             </li>
              <li>
-                <a href="/users">
+                <a href="applian.php?a=true" <?php if(isset($_GET['a'])){ echo "class='active'";}?> >
                     <i class="fa fa-calendar"></i>
-                    <span>User Managment</span>
+                    <span>Appliances</span>
                 </a>
             </li>                
         </ul>

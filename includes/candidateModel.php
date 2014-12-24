@@ -47,10 +47,12 @@ class candidite
         $this->cvUrl = $file['cv']['name'];
         if($file['letter']['error'] != 4){
             $this->coverUrl = $file['letter']['name'];
+        }else{
+            $this->coverUrl = "";
         }
         $move = move_uploaded_file($file['cv']['tmp_name'], $this->location.$this->firstName."_".$this->familyName."_CV".$this->cvUrl);
         $this->cvUrl = $this->firstName."_".$this->familyName."_CV".$this->cvUrl;
-        if(isset($this->coverUrl)){
+        if(isset($this->coverUrl) && !empty($this->coverUrl)){
            move_uploaded_file($file['letter']['tmp_name'], $this->location.$this->firstName."_".$this->familyName."_Letter".$this->coverUrl);
            $this->coverUrl = $this->firstName."_".$this->familyName."_Letter".$this->coverUrl;        }
         if($move){
@@ -58,6 +60,14 @@ class candidite
         }else{
             return FALSE;  
         }       
+    }
+    public function fetchByJobId($id){
+        $database = new Database();
+        $database->query("select * from candidates Where job_id = :job_id");
+        $database->bind(':job_id', $id, PDO::PARAM_INT);
+        $database->execute();
+        $rows = $database->fetchAll();                
+        return $rows; 
     }
     
     

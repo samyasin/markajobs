@@ -124,6 +124,9 @@ div.file_upload:before {
 	text-align: center;	
 	cursor: pointer;
 }
+div.cv:before{
+    content: "Upload Resume";
+}
 .upload-label{
     vertical-align: 20px;
     margin-right: 20px;

@@ -75,8 +75,8 @@ if(isset($_POST['submit'])){
     <div class="fileUpload">
                 <?php if(isset($errors['cv'])){ echo "<p class='orange'>{$errors['cv']}</p>";} ?>
                 <label class="upload-label">Resume<span class="dept">*</span></label>
-                <div class="file_upload">
-                    <input type="file" name="cv" id="file_upload" class="required-entry">
+                <div class="file_upload cv">
+                    <input type="file" name="cv" id="file_upload" class="required-entry" >
                 </div>
                 <label style="margin-left: 80px;" class="upload-label">Cover Letter</label>
                 <div class="file_upload">
