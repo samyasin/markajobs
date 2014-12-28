@@ -23,6 +23,7 @@ if(!isset($_SESSION['user_id'])){
     <!-- Custom styles for this template -->
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/style-responsive.css" rel="stylesheet" />
+    <link href="./css/font-awesome.css" rel="stylesheet" />
 
 </head>
 

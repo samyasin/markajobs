@@ -7,7 +7,6 @@
         <img src="./images/logo.png" alt="">
     </a>
     <div class="sidebar-toggle-box">
-        <div class="fa fa-bars"></div>
     </div>
 </div>
 <!--logo end-->
@@ -21,9 +20,8 @@
                 <img alt="" src="./images/logo_big.png">
                 <b class="caret"></b>
             </a>
-            <ul class="dropdown-menu extended logout">
-                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
-                <li><a href="/logout"><i class="fa fa-key"></i> Log Out</a></li>
+            <ul class="dropdown-menu extended logout">                
+                <li><a href="logout.php"> Log Out</a></li>
             </ul>
         </li>      
     </ul>
