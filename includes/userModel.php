@@ -69,7 +69,7 @@ class user
     
     // Authintacete Will check if the user exist or not
     public function Auth($username= '' , $password=''){        
-        $database = new database();
+        $database = new Database();
         $sql = "SELECT user_id FROM users WHERE 
                 username = :username AND password = :password ";                
         $result = $database->query($sql);        
