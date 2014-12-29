@@ -116,7 +116,7 @@ if(isset($_POST['submit'])){
     </div>
     <div class="form-col"></div>
     <div class="form-col" style="float: right;width: 34%">
-        <input class="submit-orange" type="submit" name="submit" value="SEND APPLICATION"/>
+        <input class="submit-orange" type="submit" name="submit" value="Submit APPLICATION"/>
     </div>
 <!--    <div class="btn-area">
         <button class="btn-area">SEND APPLICATION</button>

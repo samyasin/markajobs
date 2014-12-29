@@ -22,6 +22,7 @@ $jobsSet = $jobModel->fetchAll();
         if (isset($jobsSet) && !empty($jobsSet)) {                        
                 echo "<div class='bottom-space'>";                                
                 echo "<table class='table'>";
+                echo "<tr class='orange'><td>Title</td><td>Department</td><td>Country</td><td>Date</td></tr>";                                    
                 foreach ($jobsSet as $row) {                   
                     echo "<tr>";
                     echo "<td><a href='job.php?id={$row['job_id']}'>{$row['job_title']}</a></td>";
