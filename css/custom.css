@@ -45,13 +45,23 @@
 }
 .table tr{
     border: none;
+    border-bottom: 1px solid #000;
+    height: 100%;
+    overflow:hidden;
 }
 .table tr td:first-child{
     color: #f04e23;
     text-align: left;
 }
 .table tr td{
-    text-align: right;
+    text-align: center;
+    padding: 14px 0 18px 0;
+}
+.table tr td a{
+    color:#000;
+}
+.table tr td a:hover{
+    color:#f04e23 !important;
 }
 .jobs-grid h1{
     color: #919191;

@@ -2,7 +2,7 @@
 require_once 'includes/header.php';
 require_once 'includes/jobsModel.php';
 $jobModel = new job();
-$jobsSet = $jobModel->fetchAllDept();
+$jobsSet = $jobModel->fetchAll();
 ?>
 <!-- webSite Content Start-->
 <div class="main-header"></div>
@@ -19,20 +19,18 @@ $jobsSet = $jobModel->fetchAllDept();
     <div class="bottom-space"></div>
     <div class="bottom-space jobs-grid">
         <?php
-        if (isset($jobsSet) && !empty($jobsSet)) {
-            foreach ($jobsSet as $job) {
-                echo "<div class='bottom-space'>";
-                echo "<h1>{$job['dept']}</h1>";
-                $grouping = $jobModel->fetchByDept($job['dept']);
+        if (isset($jobsSet) && !empty($jobsSet)) {                        
+                echo "<div class='bottom-space'>";                                
                 echo "<table class='table'>";
-                foreach ($grouping as $row) {
+                foreach ($jobsSet as $row) {                   
                     echo "<tr>";
-                    echo "<td><a class='orange' href='job.php?id={$row['job_id']}'>{$row['job_title']}</a></td>";
-                    echo "<td>{$row['location']}</td></tr>";
+                    echo "<td><a href='job.php?id={$row['job_id']}'>{$row['job_title']}</a></td>";
+                    echo "<td>{$row['location']}</td>";
+                    echo "<td>{$row['dept']}</td>";
+                    echo "<td>".date("M d", strtotime($row['created']))."</td></tr>";
                 }
                 echo "</table></div>";
-            }
-        }
+            }        
         ?>
             <div class="bottom-space padding-space"></div>
 
