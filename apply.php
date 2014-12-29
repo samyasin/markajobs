@@ -66,8 +66,7 @@ if(isset($_POST['submit'])){
             <input type="text" class="required-entry plh txt-big input-big"  name="job_title" placeholder="Type here the position you want to apply for...">
         </div>
         <div class="work bottom-space">
-            <p>Thank you for considering a career at MarkaVIP. Please take a minute to fill out the following form.
-                After you have completed your application a confirmation email will be sent to you.</p>
+            <p>Thank you for considering a career at MarkaVIP.  Please take a minute to fill out and submit the following form. After you have submitted your application, a confirmation email will be sent to you.</p>
         </div>        
     </div>    
     <div class="fileUpload">
@@ -119,7 +118,7 @@ if(isset($_POST['submit'])){
             </div>        
     </div>
     <div class="form-col"></div>
-    <div class="form-col" style="float: right;width: 38%">
+    <div class="form-col" style="float: right;width: 34%">
         <input class="submit-orange" type="submit" name="submit" value="SEND APPLICATION"/>
     </div>
    <div class="clear"></div> 

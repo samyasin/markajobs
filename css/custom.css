@@ -81,8 +81,8 @@
 .btn-area a {
     background: none repeat scroll 0 0 #f04e23;
     color: #fff;
-    font-size: 1.3em;
-    padding: 22px 51px;
+    font-size: 1.1em;
+    padding: 10px 20px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -128,7 +128,7 @@ div.file_upload input {
 }
 
 div.file_upload:before {
-	content: 'UPLOAD COVER LETTER';
+	content: 'Upload Cover Letter';
 	position: absolute;
 	left: 0; right: 0;
 	text-align: center;	
@@ -156,8 +156,9 @@ div.cv:before{
 .submit-orange{
     background: none repeat scroll 0 0 #f04e23;
     color: #fff;
-    font-size: 1.2em;
-    padding: 15px;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
     text-decoration: none;
     text-transform: uppercase;
 }

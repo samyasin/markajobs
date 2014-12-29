@@ -42,8 +42,5 @@ $jobsSet = $jobModel->fetchAll();
         <p style="padding-bottom: 70px;">If you don't see the position you're looking for, <a href='apply.php' class="orange">click here.</a></p>
     </div>
 </div>
-
-
-
-                    <!-- webSite Content End-->
-                    <?php require_once 'includes/footer.php'; ?>
+<!-- webSite Content End-->
+<?php require_once 'includes/footer.php'; ?>

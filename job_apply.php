@@ -62,8 +62,7 @@ if(isset($_POST['submit'])){
             <h3 class="orange"><?php echo $jobsSet['dept']." | ".$jobsSet['location']; ?></h3>
         </div>
         <div class="work bottom-space">
-            <p>Thank you for considering a career at MarkaVIP. Please take a minute to fill out the following form.
-                After you have completed your application a confirmation email will be sent to you.</p>
+            <p>Thank you for considering a career at MarkaVIP.  Please take a minute to fill out and submit the following form. After you have submitted your application, a confirmation email will be sent to you.</p>
         </div>        
     </div>
     <form action="<?php echo $_SERVER['PHP_SELF']."?job_id=".$jobsSet['job_id']; ?>" method="POST" enctype="multipart/form-data">
@@ -116,7 +115,7 @@ if(isset($_POST['submit'])){
             </div>        
     </div>
     <div class="form-col"></div>
-    <div class="form-col" style="float: right;width: 38%">
+    <div class="form-col" style="float: right;width: 34%">
         <input class="submit-orange" type="submit" name="submit" value="SEND APPLICATION"/>
     </div>
 <!--    <div class="btn-area">

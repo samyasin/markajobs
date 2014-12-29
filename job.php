@@ -9,7 +9,7 @@ $jobsSet = array_shift($jobModel->fetchById($_GET['id']));
 <div class="block">
     <div class="main-title bottom-space">
         <div class="txt-area">
-            <p><span class="orange">Current Openings</span> / <?php echo $jobsSet['job_title']; ?></p>
+            <p><span class="orange">Current Openings</span></p>
         </div>
         <div class="btn-area">
             <a target="_blank" href="job_apply.php?job_id=<?php echo $_GET['id']; ?>">Apply Now</a>
@@ -40,7 +40,7 @@ $jobsSet = array_shift($jobModel->fetchById($_GET['id']));
 </div>
 <div class="block">
     <div class="main-title bottom-space v-align">
-        <p style="padding-bottom: 70px;">If you don't see the position you're looking for, <a href='' class="orange">click here.</a></p>
+        <p style="padding-bottom: 70px;">If you don't see the position you're looking for, <a href='apply.php' class="orange">click here.</a></p>
     </div>
 </div>
  <!-- webSite Content End-->
