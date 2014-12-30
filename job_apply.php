@@ -50,7 +50,7 @@ if(isset($_POST['submit'])){
 <div class="block">
     <div class="main-title bottom-space">
         <div class="txt-area">
-            <p><span class="orange">Current Openings</span> / <span class="orange"><?php echo $jobsSet['job_title']; ?></span> / Apply</p>
+            <p><span class="orange">Current Openings</span></p>
         </div>
         <div class="bottom-space clear"></div>
     </div>
@@ -76,9 +76,11 @@ if(isset($_POST['submit'])){
                 <div class="file_upload">
                     <input type="file" name="letter" id="file_upload">
                     <input type="hidden" name="job_id" value="<?php echo $jobsSet['job_id']  ?>">
+                </div>                
+                <div class="bottom-space">
+                    <p><span class="orange">*Please note you must upload a resume before applying for a vacancy</span></p>
                 </div>
-                <div class="bottom-space"></div>
-     </div>
+    </div>
     <hr>    
     <div class="bottom-space"></div>
     <div class="work bottom-space">
@@ -115,7 +117,7 @@ if(isset($_POST['submit'])){
             </div>        
     </div>
     <div class="form-col"></div>
-    <div class="form-col" style="float: right;width: 34%">
+    <div class="form-col" style="float: right;width: 32%">
         <input class="submit-orange" type="submit" name="submit" value="Submit APPLICATION"/>
     </div>
 <!--    <div class="btn-area">

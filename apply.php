@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
 <div class="block">
     <div class="main-title bottom-space">
         <div class="txt-area">
-            <p><span class="orange">Current Openings</span> / Apply</p>
+            <p><span class="orange">Current Openings</span></p>
         </div>
         <div class="bottom-space clear"></div>
     </div>
@@ -63,7 +63,7 @@ if(isset($_POST['submit'])){
         <div class='bottom-space'>
             <?php if(isset($errors['job_title'])){ echo "<p class='orange'>{$errors['job_title']}</p>";} ?>
             <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
-            <input type="text" class="required-entry plh txt-big input-big"  name="job_title" placeholder="Type here the name of the position...">
+            <input type="text" class="required-entry plh txt-big input-big"  name="job_title" placeholder="Please type the name of the position you are seeking">
         </div>
         <div class="work bottom-space">
             <p>Thank you for considering a career at MarkaVIP.  Please take a minute to fill out and submit the following form. After you have submitted your application, a confirmation email will be sent to you.</p>
@@ -80,7 +80,9 @@ if(isset($_POST['submit'])){
                     <input type="file" name="letter" id="file_upload">
                     <input type="hidden" name="job_id" value="0">
                 </div>
-                <div class="bottom-space"></div>
+                 <div class="bottom-space">
+                    <p><span class="orange">*Please note you must upload a resume before applying for a vacancy</span></p>
+                </div>
      </div>
     <hr>    
     <div class="bottom-space"></div>
@@ -118,7 +120,7 @@ if(isset($_POST['submit'])){
             </div>        
     </div>
     <div class="form-col"></div>
-    <div class="form-col" style="float: right;width: 34%">
+    <div class="form-col" style="float: right;width: 32%">
         <input class="submit-orange" type="submit" name="submit" value="Submit APPLICATION"/>
     </div>
    <div class="clear"></div> 

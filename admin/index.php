@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
                                     <label class="col-sm-1 control-label">Location</label>      
                                     <select name="location" id="brand" class="form-control m-bot15" required>
                                         <option value="Amman, Jordan">Amman, Jordan</option>
-                                        <option value="Dubai, United Arab Emirates">Dubai, United Arab Emirates</option>
+                                        <option value="Dubai, UAE">Dubai, United Arab Emirates</option>
                                         <option vlaue="Beirut, Lebanon">Beirut, Lebanon</option>
                                         <option vlaue=" Jeddah, Saudi Arabia"> Jeddah, Saudi Arabia</option>                                                                  
                                     </select>   
