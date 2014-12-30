@@ -66,7 +66,7 @@ if(isset($_POST['submit'])){
             <input type="text" class="required-entry plh txt-big input-big"  name="job_title" placeholder="Please type the name of the position you are seeking">
         </div>
         <div class="work bottom-space">
-            <p> Thank you for considering a career at MarkaVIP.  Please take a minute to fill out and submit the following form.  After you have submitted your application, a confirmation email will be sent to you.</p>
+            <p> Thank you for considering a career at MarkaVIP. &nbsp;Please take a minute to fill out and submit the following form.&nbsp; After you have submitted your application, &nbsp;a confirmation email will be sent to you.</p>
         </div>        
     </div>    
     <div class="fileUpload">
