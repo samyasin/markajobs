@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $errors = array();
     $flag = TRUE;
     if($_FILES['cv']['error'] == 4){
-        $errors['cv'] = "* Your Resume is Rquired";
+        $errors['cv'] = "* You currently have it spelt Rquired";
         $flag = FALSE;
     }    
     if(empty($_POST['job_title'])){
@@ -96,31 +96,31 @@ if(isset($_POST['submit'])){
             <?php if(isset($errors['upload'])){ echo "<p class='orange'>{$errors['upload']}</p>";} ?>    
         </div>
     <div class="form-col">                                    
-        <label class="required upload-label">First name<em class="orange">*</em></label>
+        <label class="required upload-upper-label">First name<span class="orange"> * </span></label>
             <div class="input-box">
                 <input type="text" class="input-text required-entry plh txt-big" title="First Name"  name="firstname" onclick="return {placeholder:'First Name'};" id="firstname">
             </div>
     </div>
     <div class="form-col">            
-            <label class="required upload-label">Family name<em class="orange">*</em></label>
+            <label class="required upload-upper-label">Family name<span class="orange"> * </span></label>
             <div class="input-box">
                 <input type="text" class="input-text required-entry plh txt-big" title="Family Name"  name="familyname" onclick="return {placeholder:'Family Name'};" id="familyname">                
             </div>
     </div>  
     <div class="form-col">
-        <label class="required upload-label" style="padding-left:36px;">Email<em class="orange">*</em></label>
+        <label class="required upload-upper-label">Email<span class="orange"> * </span></label>
             <div class="input-box">
                 <input type="email" class="input-text required-entry plh txt-big" title="Email"  name="email" onclick="return {placeholder:'Email'};" id="email">            
             </div>            
     </div>
     <div class="form-col">
-        <label class="required upload-label" style="padding-left:36px;">Phone<em class="orange">*</em></label>
+        <label class="required upload-upper-label">Phone<span class="orange">*</span></label>
             <div class="input-box">
                 <input type="text" class="input-text required-entry plh txt-big" title="Phone"  name="phone" onclick="return {placeholder:'Phone'};" id="phone">                
             </div>        
     </div>
     <div class="form-col"></div>
-    <div class="form-col" style="float: right;width: 32%">
+    <div class="form-col" style="float: right;width: 41%">
         <input class="submit-orange" type="submit" name="submit" value="Submit APPLICATION"/>
     </div>
    <div class="clear"></div> 

@@ -170,3 +170,9 @@ div.cv:before{
     padding: 18px 10px !important;
     width: 97% !important;
 }
+.upload-upper-label{
+    color: #787878;
+    display: block;
+    margin-right: 20px;
+    vertical-align: 20px;
+}
