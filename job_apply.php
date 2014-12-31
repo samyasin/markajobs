@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
     $errors = array();
     $flag = TRUE;
     if($_FILES['cv']['error'] == 4){
-        $errors['cv'] = "* you currently have it spelt Required";
+        $errors['cv'] = "* Your resume is required";
         $flag = FALSE;
     }    
     if(empty($_POST['firstname'])){
