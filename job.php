@@ -4,7 +4,7 @@ require_once 'includes/jobsModel.php';
 $jobModel = new job();
 $jobsSet = array_shift($jobModel->fetchById($_GET['id']));
 ?>
-<!-- webSite Content Start-->
+<!-- webSite Content Start here-->
 <div class="main-header"></div>
 <div class="block">
     <div class="main-title bottom-space">
